@@ -1,12 +1,18 @@
 import { fadeIn } from '@/utils/motionTransitions'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { SiCplusplusbuilder } from 'react-icons/si'
+import { Header } from '@/components/Header'
+import React, {useState} from 'react'
+//import { SiCplusplusbuilder } from 'react-icons/si'
 
 export function Introduction() {
-    return (
+  const [showEmail, setShowEmail] = useState(false);
+    return (        
         <div className="bg-[#131424]/60 w-full z-10">
-            <div className="w-full h-full bg-gradient-to-r from-[#131424]/10 via-black/30 to-black/10">
+            {/*header es el menu de arriba*/}
+            <Header />
+            <div className="w-full h-full bg-[#131424]/60 z-5">
+              {/*el siguiente contenedor es un grid de 2 columnas si es md o lg, y una columna si es sm, si es medio o grande tiene el avatar en la primera columna*/ }
                 <div className="container grid items-center h-full px-5 mx-auto md:grid-cols-2 md:text-left">
                     <motion.div className="hidden w-auto h-auto mx-auto md:block"
                         variants={fadeIn('right', 0.5)}
@@ -22,24 +28,29 @@ export function Introduction() {
                         animate="show"
                         exit="hidden"
                     >
-                        <h1 className="mb-5 text-4xl leading-tight md:mb-5">Hugo Rivas del Campo,  <br />
-                            <span className="text-secondary">Ingeniero en informática de gestión desde 2004</span>
+                        <h1 className="mb-5 md:mb-10 sm:text-2xl md:text-4xl text-justify">
+                            Hugo Rivas del Campo,  <br />
+                            <span className="text-secondary">Ingeniero técnico en informática de gestión desde 2004</span>
                         </h1>
-                        <p className="max-w-sm  mb-10 text-xl md:max-w-2xl md:mx-0 md:mb-10 md:text-xl text-justify">
-                            - Bien venidos a mi portfolio. Os presento mi experiencia laboral así como mi formación, adjuntando links que permiten revisar algunas pruebas de mis últimas prácticas realizadas en Angular. Gracias por su interés.
+                        <p className="max-w-sm mb-5 md:mb-10 sm:text-2x1 md:text-xl md:max-w-2xl md:mx-0 text-justify">
+                            - Bien venidos, presento mi formación y experiencia laboral en el panel flotante. Dejo links que permiten revisar algunas de mis últimas prácticas realizadas en Angular.
                         </p>
-                        
-                        <p className="max-w-sm  mb-10 text-xl md:max-w-2xl md:mx-0 md:mb-10 md:text-x text-justify">
-                            - Mi situación laboral actual es que por decisión tomada desde la ATRIGA (Xunta de galicia), han decidido cerrar las oficinas progresivamente para las que yo trabajo, por lo que ahora me encuentro disponible 100% en el mercado laboral, renovado y con nueva ilusión por afrontar nuevos proyectos.
+        
+                        <p className="max-w-sm sm:text-2x1 mb-10 md:text-xl md:max-w-2xl md:mx-0 md:mb-10 md:text-x text-justify">
+                          - Actualmente realizo el mantenimiento informático de 2 de las 5 zonas de recaudación ejecutiva de la Xunta de Galicia que aun quedan y que continuan cerrandose hasta su completa absorción por parte de la ATRIGA, pero ahora me encuentro disponible 100% con ilusión por afrontar nuevos proyectos.
                         </p>
 
                         <div className="flex flex-col items-center gap-3 md:gap-10 md:flex-row">
                             <a href="/projects" className="px-6 py-3 my-2 transition-all border-2 cursor-pointer w-fit rounded-xl hover:shadow-xl hover:shadow-[rgb(255,0,0)]/50">
                               <span style={{color:'red'}}>Ver prácticas Angular</span>
                             </a>
-                            <a href="/contact" className="px-6 py-3 my-2 transition-all border-2 cursor-pointer text-secondary border-secondary rounded-xl hover:shadow-xl hover:shadow-secondary">
+                            <a onClick={()=>setShowEmail(!showEmail)} className="px-6 py-3 my-2 transition-all border-2 cursor-pointer text-secondary border-secondary rounded-xl hover:shadow-xl hover:shadow-secondary">
                                 Contacta conmigo
-                            </a>
+                            </a>                          
+                            {showEmail && (
+                            <p className="hover:shadow-xl hover:shadow-hover:shadow-[rgb(255,0,0)]/50">
+                            hugriv@gmail.com
+                            </p>)}
                         </div>
                     </motion.div>
                 </div>

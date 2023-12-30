@@ -1,7 +1,7 @@
 "use client"
 import { fadeIn } from "@/utils/motionTransitions"
 import { AvatarWorks } from "../AvatarWorks/AvatarWorks"
-import { Circle } from "../Circle"
+//import { Circle } from "../Circle"
 import { motion } from 'framer-motion'
 import { cardContent } from "./Work.data"
 import { useState } from "react"
@@ -81,7 +81,7 @@ export function Work() {
                     </motion.div>
                 </div>
             </div>
-            <Circle />
+            {/*<Circle />*/}
         </div>
     )
 }
