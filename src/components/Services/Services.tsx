@@ -9,7 +9,7 @@ import { servicesData } from "./Services.data";
 export function Services() {
     return (
         <div className="flex items-center justify-center h-screen">
-            <Circle />
+            {/*<Circle />*/}
             <AvatarWorks />
             <div className = "flex flex-col">
               <div className="flex flex-row md:flex-row gap-x-20 mt-60 mb-1">
