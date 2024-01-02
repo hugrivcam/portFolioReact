@@ -8,7 +8,7 @@ export const dataNavbar = [
   },
   {
     name: "Formación",
-    path: "/services",
+    path: "/training",
     icon: <RiGraduationCapLine size="30" />,
   },
   {

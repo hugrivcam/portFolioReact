@@ -13,7 +13,7 @@ export function Navbar() {
             className="fixed bottom-10 z-20 flex flex-col items-center w-full mt-auto md:justify-center h-max md:top-10 md:left-10 md:w-16 md:max-w-md md:h-screen"
             variants={fadeIn('right', 0.8)} initial="hidden" animate="show" exit="hidden"
         >
-            <div className="flex items-center justify-between w-full px-4 py-3 md:py-8 md:flex-col md:justify-center gap-y-10 md:px-4 md:h-max bg-white/10 backdrop-blur-sm md:rounded-full">
+            <div className="flex items-center justify-between w-5/6 px-4 py-3 md:py-8 md:flex-col md:justify-center gap-y-10 md:px-4 md:h-max bg-white/20 md:bg-white/10 md:backdrop-blur-sm rounded-full">
                 {dataNavbar.map(({ name, path, icon }) => (
                     <div key={name}>
                         <Link href={path} className={`${path === pathName && 'currentIconPage'} group transition-all duration-300`}>

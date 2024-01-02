@@ -1,12 +1,14 @@
 "use client"
 import { fadeIn } from "@/utils/motionTransitions";
 import { AvatarWorks } from "../AvatarWorks/AvatarWorks";
-import { Circle } from "../Circle";
+//import { Circle } from "../Circle";
 import { motion } from 'framer-motion'
 import { Slider } from "./Slider";
 import { servicesData } from "./Services.data";
 
-export function Services() {
+//export function Services() {
+
+export function Training() {
     return (
         <div className="flex items-center justify-center h-screen">
             {/*<Circle />*/}

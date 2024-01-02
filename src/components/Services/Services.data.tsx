@@ -1,4 +1,4 @@
-import { RiHome4Line, RiAccountPinCircleLine, RiServerLine, RiBriefcase2Line, RiChatPollLine,RiGraduationCapLine } from "react-icons/ri";
+//import { RiHome4Line, RiAccountPinCircleLine, RiServerLine, RiBriefcase2Line, RiChatPollLine,RiGraduationCapLine } from "react-icons/ri";
 export const servicesData = [
   {
     //icon: <RxDesktop />,
