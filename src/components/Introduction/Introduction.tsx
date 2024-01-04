@@ -33,24 +33,25 @@ export function Introduction() {
                             <span className="text-secondary">Ingeniero técnico en informática de gestión desde 2004</span>
                         </h1>
                         <p className="max-w-sm mb-5 md:mb-10 sm:text-2x1 md:text-xl md:max-w-2xl md:mx-0 text-justify">
-                            - Bien venidos, presento mi formación y experiencia laboral en el panel flotante. Dejo links que permiten revisar algunas de mis últimas prácticas realizadas en Angular.
+                            - Bienvenidos, puedes revisar mi formación y experiencia laboral. También hay algunos links que permiten revisar algunas de mis últimas prácticas realizadas en Angular.
                         </p>
         
                         <p className="max-w-sm sm:text-2x1 mb-10 md:text-xl md:max-w-2xl md:mx-0 md:mb-10 md:text-x text-justify">
-                          - Actualmente realizo el mantenimiento informático de 2 de las 5 zonas de recaudación ejecutiva de la Xunta de Galicia que aun quedan y que continuan cerrandose hasta su completa absorción por parte de la ATRIGA, pero ahora me encuentro disponible 100% con ilusión por afrontar nuevos proyectos.
+                          - En la actualidad realizo el mantenimiento de la aplicación que he desarrollado para las zonas de recaudación ejecutiva de la Xunta de Galicia, pero ahora me encuentro totalmente disponible y con ilusión por afrontar nuevos proyectos.
                         </p>
 
                         <div className="flex flex-col items-center gap-3 md:gap-10 md:flex-row">
                             {/* <a href="/projects" className="px-6 py-3 my-2 transition-all border-2 cursor-pointer w-fit rounded-xl hover:shadow-xl hover:shadow-[rgb(255,0,0)]/50">
                               <span style={{color:'red'}}>Ver prácticas Angular</span>
                             </a> */}
-                            <a onClick={()=>setShowEmail(!showEmail)} className="px-6 py-3 my-2 transition-all border-2 cursor-pointer text-secondary border-secondary rounded-xl hover:shadow-xl hover:shadow-secondary">
-                                Contacta conmigo
-                            </a>                          
+
                             {showEmail && (
                             <p className="hover:shadow-xl hover:shadow-hover:shadow-[rgb(255,0,0)]/50">
                             hugriv@gmail.com
                             </p>)}
+                            <a onClick={()=>setShowEmail(!showEmail)} className="px-6 py-3 my-2 transition-all border-2 cursor-pointer text-secondary border-secondary rounded-xl hover:shadow-xl hover:shadow-secondary">
+                                Contacta conmigo
+                            </a>                          
                         </div>
                     </motion.div>
                 </div>

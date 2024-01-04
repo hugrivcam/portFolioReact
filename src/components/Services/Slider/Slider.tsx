@@ -30,7 +30,7 @@ export function Slider() {
                 clickable: true
             }}
             modules={[Pagination]}
-            className="h-[240px] md:h-[340px] w-[450px] md:w-[1000px]">
+            className="h-[225px] md:h-[340px] w-[300px] md:w-[1000px]">
               
             {
               //cursor-pointer
@@ -39,14 +39,14 @@ export function Slider() {
                 <SwiperSlide key={index}>
                     
                     <div className="flex px-6 py-8 h-[200px]  md:h-auto rounded-lg  bg-[rgba(65,47,123,0.15)] sm:flex-col gap-x-6 sm:gap-x-0 group hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300 ">
-                        <div className="mb-4 text-4xl text-secondary">{item.icon}</div>
+                        <div className="mb-4 text-xl md:text-4xl text-secondary">{item.icon}</div>
                         <div>
-                            <h3 className = "text-secondary">{item.title}</h3>
-                            <p className="text-sm">{item.description}</p>
-                            <p className="text-sm">{item.description2}</p>
-                            <p className="text-sm">{item.description3}</p>
+                            <h1 className = "text-sm md:text-4xl text-secondary">{item.title}</h1>
+                            <p className="text-xs md:text-sm">{item.description}</p>
+                            <p className="text-xs md:text-sm">{item.description2}</p>
+                            <p className="text-xs md:text-sm">{item.description3}</p>
                         </div>
-                        <div className="text-3xl">
+                        <div className="text-xl md:text-3xl">
                             <RxCube className="transition-all duration-300 group-hover:rotate-180 group-hover:text-[rgb(0,200,200)]" />
                         </div>
                     </div>
