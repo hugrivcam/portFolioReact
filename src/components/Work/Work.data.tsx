@@ -41,7 +41,7 @@ export const cardContent = [
     id: 3,
     title: "<span style='color:#F9E79F'>Control de Accesos, Presencia, programación tcp de terminales</span>",
     description:
-      "Es esta estapa profesional, además de desarrollar muchas soluciones pequeñas y medianas para muchas empresas, cabe destacar mi experiencia desarrollando aplicaciones para el <span style='color:cyan'> control de accesos y presencia</span> y su <span style='color:cyan'> comunicación tcp/ip con los terminales </span> donde se programan horarios, usuarios y lectura de datos. Desarrollo <span style='color:orange'>C++</span> principalmente, tambien, <span style='color:orange'>VBA</span>, <span style='color:orange'>Excel / libre office automation</span>. 2006-2010",
+      "Es esta estapa profesional, además de desarrollar varias soluciones pequeñas y medianas para distintos clientes, cabe destacar mi experiencia desarrollando aplicaciones para el <span style='color:cyan'> control de accesos y presencia</span> y su <span style='color:cyan'> comunicación tcp/ip con los terminales </span> donde se programan horarios, usuarios y lectura de datos. Desarrollo <span style='color:orange'>C++</span> principalmente, tambien, <span style='color:orange'>VBA</span>, <span style='color:orange'>Excel / libre office automation</span>. 2006-2010",
     imageUrl: "/logo_accesos.png",
     skills: [
       {
@@ -100,8 +100,6 @@ export const cardContent = [
       {
         icon: <SiReact  size="40" />
       },
-
-
     ]
   },
 

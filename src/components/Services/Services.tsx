@@ -33,17 +33,18 @@ export function Training() {
                           ))}
                       </div>
                   </div>
-
+                  {/* tamaños de texto: md:text-xl  lg base sm xs 2xl 6xl*/}
                   <div className="flex flex-col text-center md:text-left text-sm md:txt-xl">
                       <motion.h1 className="mb-4 text-3xl" variants={fadeIn('up', 0.5)} initial="hidden" animate="show" exit="hidden">
                           Mi <span className="text-secondary">Formación:</span>
                       </motion.h1>
+                      
                       <motion.p
                           variants={fadeIn('up', 0.5)}
                           initial="hidden"
                           animate="show"
                           exit="hidden"
-                          className="max-w-md text-xs md:text-normal"
+                          className="max-w-md text-xs md:text-base"
                           style={{ textAlign: 'justify',color: 'gray'}}> A partir de 1998 he cursado FP superior en Informática de Gestión y ESEI (Escuela superior de Ingeniería informática). Tengo un recorrido profesional de más de 20 años. Actualmente estoy realizando varios cursos de programación web que me permiten explorar el desarrollo web &quot;full-stack&quot;.
                       </motion.p>                    
                   </div>      
