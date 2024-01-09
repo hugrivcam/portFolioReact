@@ -44,7 +44,7 @@ export function Training() {
                           animate="show"
                           exit="hidden"
                           className="max-w-md text-xs md:text-normal"
-                          style={{ textAlign: "justify",color: "gray"}}> A partir de 1998 he cursado FP superior en Informática de Gestión y ESEI (Escuela superior de Ingeniería informática). Tengo un recorrido profesional de más de 20 años. Actualmente estoy realizando varios cursos de programación web que me permiten explorar el desarrollo web "full-stack".
+                          style={{ textAlign: 'justify',color: 'gray'}}> A partir de 1998 he cursado FP superior en Informática de Gestión y ESEI (Escuela superior de Ingeniería informática). Tengo un recorrido profesional de más de 20 años. Actualmente estoy realizando varios cursos de programación web que me permiten explorar el desarrollo web &quot;full-stack&quot;.
                       </motion.p>                    
                   </div>      
     
