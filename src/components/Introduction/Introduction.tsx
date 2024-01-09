@@ -33,11 +33,11 @@ export function Introduction() {
                             <span className="text-secondary">Ingeniero técnico en informática de gestión desde 2004</span>
                         </h1>
                         <p className="max-w-sm mb-5 md:mb-10 sm:text-2x1 md:text-xl md:max-w-2xl md:mx-0 text-justify">
-                            - Bienvenidos, puedes revisar mi formación y experiencia laboral. También hay algunos links que permiten revisar algunas de mis últimas prácticas realizadas en Angular.
+                            - Bienvenidos. Puedes revisar mi formación y experiencia laboral. También hay algunos links que permiten revisar algunas de mis prácticas realizadas en Angular.
                         </p>
         
                         <p className="max-w-sm sm:text-2x1 mb-10 md:text-xl md:max-w-2xl md:mx-0 md:mb-10 md:text-x text-justify">
-                          - En la actualidad realizo el mantenimiento de la aplicación que he desarrollado para las zonas de recaudación ejecutiva de la Xunta de Galicia, pero ahora me encuentro totalmente disponible y con ilusión por afrontar nuevos proyectos.
+                          - En la actualidad realizo el mantenimiento de la aplicación que he desarrollado para las zonas de recaudación ejecutiva de la Xunta de Galicia, aun así me encuentro totalmente disponible y con ilusión por afrontar nuevos proyectos.
                         </p>
 
                         <div className="flex flex-col items-center gap-3 md:gap-10 md:flex-row">

@@ -67,7 +67,7 @@ export function Work() {
                                         {id === expandedIndex && (
                                             <>
                                                 <p className="text-sm" dangerouslySetInnerHTML={{ __html: description }}/>
-                                                <div className="flex gap-5 mt-3">
+                                                <div className="flex gap-5 mt-3" style = {{color:'orange'}}>                                                
                                                     {skills.map((data, index) => (
                                                         <p key={index}>{data.icon}</p>
                                                     ))}
