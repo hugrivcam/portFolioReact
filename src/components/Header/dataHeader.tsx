@@ -1,6 +1,7 @@
-import { RiFileGifLine , RiDatabase2Line , RiTiktokLine, RiPinterestLine, RiTwitterXFill, RiBehanceLine } from "react-icons/ri";
+import { RiFileGifLine , RiDatabase2Line , RiLayoutGridFill } from "react-icons/ri";
 import { FiGlobe } from "react-icons/fi";
 import { GiPipes } from "react-icons/gi";
+import { GiConwayLifeGlider } from "react-icons/gi";
 export const socialNetworks = [
   {
     logo: <RiFileGifLine  size="40" />,
@@ -22,14 +23,14 @@ export const socialNetworks = [
     src: "https://hugrivcam.github.io/AngularPipes/",
     desc: "Pipes"
   },
-   {
-     logo: <RiTwitterXFill size="40" />,
-     src: "https://hugrivcam.github.io/life_game/",
-     desc: "Juego Vida"
-   },
-   {
-     logo: <RiBehanceLine size="40" />,
-     src: "https://hugrivcam.github.io/life-cards/",
-     desc:"Test-'Hilos'"
-   },
+  {
+    logo: <GiConwayLifeGlider size="40" />,
+    src: "https://hugrivcam.github.io/life_game/",
+    desc: "Juego Vida"
+  },
+  {
+    logo: <RiLayoutGridFill size="40" />,
+    src: "https://hugrivcam.github.io/life-cards/",
+    desc:"Proc.Concurrentes"
+  },
 ];

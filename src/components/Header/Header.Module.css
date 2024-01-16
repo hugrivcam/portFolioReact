@@ -1,0 +1,34 @@
+.headerContainer {
+  position: relative;
+}
+
+.header {
+  position: relative;
+}
+
+.customHeading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.white {
+  color: rgb(60, 186, 77);
+  z-index: 0;
+}
+
+.secondary {
+  color: orange;  /* Reemplaza con tu color secundario */
+  z-index: 1;
+}
+
+.text {
+  position: relative;
+  font-size: 4rem; /* Ajusta el tamaño del texto según sea necesario */
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
